@@ -1,0 +1,111 @@
+:root {
+    --main-color: #1428a0;
+}
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+#header {
+    position:fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    z-index: 99;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+#header:before {
+    content: "";
+    width: 100%;
+    top: 60px;
+    background-color: #f8f8f8;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+#logo {
+    position: absolute;
+    left: 150px;
+    top: 13px;
+}
+#logo a {
+    display: block;
+    padding: 0 10px;
+}
+#gnb {
+    text-align: center;
+}
+#header.open {
+    height: 100%;
+}
+#gnb .list > li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -1px;
+    height: 100%
+}
+#gnb .list .depth01 {
+    font-size: 20px;
+    color: var(--main-color);
+    line-height: 60px;
+    padding: 5px 40px;
+}
+#gnb .list > li a {
+    display: block;
+}
+#gnb .list > li .depth02 {
+    padding: 5px 0;
+    width: 100%;
+}
+#gnb .list > li .depth02 > li {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+}
+#gnb .depth02 > li {
+    text-align: left;
+}
+#gnb .depth03 > li {
+    padding-left: 5px;
+    font-size: 14px;
+    position: relative;
+    font-weight: 300;
+}
+#gnb .utilMenu {
+    position: absolute;
+    right: 150px;
+    top: 10px;
+    height: 50px;
+}
+
+#gnb .utilMenu .list > li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.section {
+    height: 100vh;
+    position: relative;
+    background-repeat: none; 
+    background-size: cover;
+}
+.section .content {
+    width: 1200px;
+    margin: auto;
+}
+.content h2 {
+    text-align: center;
+}
